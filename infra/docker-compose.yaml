@@ -9,7 +9,7 @@ services:
       - ./.env
   
   web:
-    image: tomasitto/api_yamdb:latest
+    image: tomas12345mann/api_yamdb:latest
     restart: always
     volumes:
       - static_value:/app/static/
