@@ -4,6 +4,9 @@
 
 Учебный проект для изучения работы CI CD (Яндекс Практикум)
 
+###Проект развернут по адресу: http://localhost:8000/redoc/
+###Документация доступна по эндпойнту: http://localhost:8000/redoc/
+
 ## Описание
 Данный проект является проектом учебного курса Яндекс Практикум по специальности Python-разработчик.
 
@@ -26,7 +29,7 @@ POSTGRES_USER=postgres # логин для подключения к базе д
 POSTGRES_PASSWORD=postgres1 # пароль для подключения к БД (установите свой)
 DB_HOST=db # название сервиса (контейнера)
 DB_PORT=5432 # порт для подключения к БД
-SECRET_KEY = 'p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'
+SECRET_KEY = "Your_secret_key"
 
 * Установите Docker, соответствующий вашей операционной системе
 * Запустите Docker
@@ -76,8 +79,8 @@ POST request:
 Response:
 
 {
-    "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlb90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTc4OTAwOSwiaWF0IjoxNjU4MDYxMDA5LCJqdGkiOiJkNTUyNTJlODQ0OGI0MDExYjFjOGYwZDYxOGU2ZjAxZCIsInVzZXJfaWQiOjF9.IVjgYCbZiQ_kdraTYIz4VdYYpZoh7kTMxpmjjJ1tkIg",
-    "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlb90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4OTI1MDA5LCJpYXQiOjE2NTgwNjEwMDksImp0aSI6ImIzZDViMmY2YjExZjQxMTM4NTk1NWVmMzg5NmZmM2JkIiwidXNlcl9pZCI6MX0.dEfpwO3ZBA62R6lH6ybHx3KxCZU9PgQCoXvaEsl5UyI"
+    "refresh": "Your_Token_Here",
+    "access": "Your_Access_Token_Here"
 }
 
 * Можно заполнить пустые поля в своем профайле, отправив PATCH запрос на эндпойнт:
